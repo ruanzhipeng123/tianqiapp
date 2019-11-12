@@ -1,0 +1,246 @@
+html,
+body,
+.fine {
+    height: 100%;
+}
+
+body {
+    background: url('./img/timg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.fine {
+    overflow-y: auto;
+}
+
+
+/* 头部 */
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.system-nav {
+    height: 10px;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.fine-nav {
+    height: .44rem;
+    background-color: rgba(255, 255, 255, .2);
+    padding-left: .1rem;
+    padding-right: .1rem;
+}
+
+
+.location-icon {
+    width: .2rem;
+    height: .2rem;
+    background: url('./img/location.png') no-repeat center center;
+    background-size: .2rem .2rem;
+    margin-top: .12rem;
+}
+
+.location-city {
+    width: .8rem;
+    font-size: 16px;
+    line-height: .44rem;
+    margin-left: .1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.search-box {
+    width: calc(100% - 1.58rem);
+    height: .28rem;
+    margin-top: .08rem;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .5) 100%);
+    margin-left: .2rem;
+    /* border-radius: .14rem; */
+    padding-left: .14rem;
+    padding-right: .14rem;
+    border-top-left-radius: .14rem;
+    border-bottom-right-radius: .14rem;
+}
+
+.search-ipt {
+    display: block;
+    width: calc(100% - .2rem);
+    height: .28rem;
+    color: #fff;
+    /* border: 1px solid #0f0; */
+    outline: none;
+}
+.search-ipt:focus {
+    animation: sun .8s linear 0s infinite alternate;
+}
+
+@keyframes sun {
+    0% {
+        box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, .1);
+    }
+
+    100% {
+        box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, .85);
+    }
+}
+
+.search-icon {
+    width: .2rem;
+    height: .2rem;
+    background: url('./img/search.png') no-repeat center center;
+    margin-top: .04rem;
+    background-size: .2rem .2rem;
+}
+
+
+/* 第二部分 */
+.fine-sun {
+    position: relative;
+    overflow-y: auto;
+    z-index: 1;
+    height: calc(100% - 10px - .44rem);
+}
+
+.same-day {
+    color: #fff;
+    margin: .3rem;
+    background-color: rgba(255, 255, 255, .1);
+    padding: .3rem;
+    border-radius: .15rem;
+    box-shadow: 0px 0px 16px 2px rgba(255, 255, 255, .22) inset;
+    border-top-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+
+}
+
+.date-week {
+    width: 1.8rem;
+    margin: 0 auto;
+}
+
+.date {
+    margin-right: .35rem;
+}
+
+.sun-wind {
+    width: 1.56rem;
+    margin: 0 auto .05rem;
+}
+
+.city {
+    font-size: .52rem;
+}
+
+.tem {
+    width: 0.66rem;
+    font-size: .3rem;
+}
+
+.clear {
+    width: .3rem;
+    height: .3rem;
+    margin-right: .15rem;
+    background-size: .3rem .3rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.sun-mend {
+    width: calc(100% - 0.86rem);
+    height: 0.4rem;
+    margin-left: .2rem;
+    position: relative;
+}
+
+.sun-mend-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.sun {
+    width: 1.95rem;
+    margin: 0 auto .1rem;
+}
+
+
+
+/* 24小时天气 */
+.all-day {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.all-day-title {
+    height: .32rem;
+    font-size: .16rem;
+    line-height: .32rem;
+    padding: 0 .1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+}
+
+.all-day-tian {
+    overflow-x: auto;
+    padding: .1rem;
+    text-align: center;
+}
+.all-day-tian>ul {
+    width: 24rem;
+}
+.all-day-tian>ul>li {
+    float: left;
+    width: 1rem;
+}
+.all-day-tian>ul>li>div {
+    margin-bottom: .1rem;
+}
+.all-day-icon {
+    width: .2rem;
+    height: .2rem;
+    /* background-color: #ddd; */
+    margin: 0 auto;
+    background-size: .2rem .2rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* 未来6天天气 */
+.tomorrow {
+    margin-top: .3rem;
+    color: #fff;
+    background-color: rgba(255, 255, 255, .2);
+}
+.tomorrow-title {
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+.tomorrow-content {
+    padding: .1rem;
+}
+.tomorrow-content>ul>li {
+    padding: .2rem 0;
+}
+
+.tomorrow-content>ul>li>span {
+    width: 25%;
+    float: left;
+    /* text-align: center; */
+}
+.tomorrow-icon {
+    display: block;
+    width: .2rem;
+    height: .2rem;
+    /* background-color: #ddd; */
+    background-size: .2rem .2rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.search-ipt::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, .6);
+  }
+  .wri {
+      text-align: right;
+  }

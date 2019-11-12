@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./rest.css">
+    <link rel="stylesheet" href="./fine.css">
+</head>
+
+<body>
+
+    <div class="fine">
+
+        <div class="nav">
+            <div class="system-nav"></div>
+            <div class="fine-nav">
+                <div class="fl">
+                    <span class="fl location-icon"></span>
+                    <span class="fl location-city">上海</span>
+                </div>
+                <div class="fr search-box">
+                    <input class="fl search-ipt" type="text" placeholder="请输入城市, 如：广州" autocomplete="off">
+                    <span class="fl search-icon"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="fine-sun">
+
+            <!-- 当天天气 -->
+            <div class="same-day">
+
+                <div class="sun-wind">
+                    <span class="city"></span>
+                </div>
+
+                <div class="sun clearfix">
+                    <span class="fl tem"></span>
+                    <div class="fl sun-mend">
+                        <div class="sun-mend-text clearfix">
+                            <span class="fl clear wea"></span>
+                            <span class="fl air_level"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix date-week">
+                    <span class="fl date"></span>
+                    <span class="fl week"></span>
+                </div>
+
+            </div>
+
+            <!-- 24小时天气 -->
+            <div class="all-day">
+                <div class="all-day-title">24小时天气</div>
+                <div class="all-day-tian">
+                    <ul class="clearfix" id="hoursWeather">
+                        <!-- <li>
+                            <div>09时</div>
+                            <div class="all-day-icon"></div>
+                            <div>20℃</div>
+                            <div>无持续风向</div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 未来6天天气 -->
+            <div class="tomorrow">
+                <div class="tomorrow-title all-day-title">未来6天天气</div>
+                <div class="tomorrow-content">
+                    <ul id="tomorrowFine">
+                        <!-- <li class="clearfix">
+                            <span>24日</span>
+                            <span>
+                                <i class="tomorrow-icon"></i>
+                            </span>
+                            <span>21℃</span>
+                            <span>东风</span>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./js/rem.js"></script>
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/fine.js"></script>
+</body>
+
+</html>
